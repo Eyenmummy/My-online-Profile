@@ -1,204 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jimmy Nya - Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Jimmy Nya
-          <div class="contact_info">
-            <img src="envelope.png" alt="Email" />
-            eyenmummy@gmail.com
-          </div>
-          <div style="clear: both"></div>
-          <div class="contact_info">
-            <img src="phone.png" alt="Phone" />
-            0806 046 0830
-          </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendations</a>
-        </div>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jimmy Nya - Full-Stack Web Developer based in Lagos, Nigeria. Builder of egcentgroup.com and modern web applications." />
+  <title>Jimmy Nya | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Jimmy Nya</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="Jimmy.png" class="profile_image" alt="Jimmy Nya" />
-      </div>
+  <a class="floating-profile" href="#home" aria-label="Back to Jimmy Nya's introduction">
+    <span class="floating-profile-ring">
+      <img src="Jimmy.png" alt="Jimmy Nya" />
+    </span>
+    <span class="floating-profile-copy">
+      <strong>Jimmy Nya</strong>
+      <small>Full-Stack Developer</small>
+    </span>
+  </a>
 
-      <div>
-        <h1>
-          Hi, I'm Jimmy Nya — Building digital experiences that work.
-        </h1>
-        <p>
-          I'm a Full-Stack Web Developer based in Lagos, Nigeria, with hands-on experience building modern, responsive websites and web applications.
-          <br /><br />
-          I am the sole developer behind
-          <strong>
-            <a href="https://egcentgroup.com" target="_blank" rel="noopener">egcentgroup.com</a>
-          </strong>, which I designed and built from scratch. I work with HTML, CSS, JavaScript, React, and Node.js, and I’m continuously strengthening my skills through structured learning on Coursera (including cloud operations, CI/CD, and full-stack development).
-          <br /><br />
-          Before focusing fully on software development, I gained valuable operational and client-facing experience in the hospitality industry at Axari Hotels and Suites. This background helps me create practical, user-centered digital solutions.
-          <br /><br />
-          I’m currently open to freelance opportunities and collaborations in web development.
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-layout">
+      <div class="hero-portrait-wrap">
+        <div class="hero-portrait-glow"></div>
+        <img class="hero-portrait" src="Jimmy.png" alt="Portrait of Jimmy Nya" />
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Jimmy Nya</h1>
+        <p class="hero-title">Full-Stack Web Developer</p>
+        <p class="hero-location">Lagos, Nigeria · Available for Remote Work</p>
+        <p class="hero-tagline">
+          I design and build production websites and web applications from scratch.
+          Sole developer of <a href="https://egcentgroup.com" target="_blank" rel="noopener">egcentgroup.com</a>.
         </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear: both"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html5.png" alt="HTML5" />
-          <h6>HTML5</h6>
-          <p>Proficient</p>
-        </div>
-
-        <div class="skill">
-          <img src="CSS3.png" alt="CSS3" />
-          <h6>CSS3</h6>
-          <p>Proficient</p>
-        </div>
-
-        <div class="skill">
-          <img src="java.png" alt="JavaScript" />
-          <h6>JavaScript</h6>
-          <p>Intermediate – Advanced</p>
-        </div>
-
-        <div class="skill">
-          <img src="react.png" alt="React" />
-          <h6>React</h6>
-          <p>Intermediate</p>
-        </div>
-
-        <div class="skill">
-          <img src="node.png" alt="Node.js" />
-          <h6>Node.js</h6>
-          <p>Intermediate</p>
-        </div>
-
-        <div class="skill">
-          <img src="java.png" alt="Java" />
-          <h6>Java</h6>
-          <p>Basic – Intermediate</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section class="achievements" id="projects">
-      <h2>Projects</h2>
-      <div style="clear: both"></div>
-
-      <div id="achievements-container" class="achievements-container">
-        <div class="achievements-card">
-          <h3>AI-Powered Website (Record Label)</h3>
-          <ul>
-            <li>
-              Designed and developed a secure website integrated with IBM Watson Assistant (AI chatbot) for a record label client using HTML, CSS, and JavaScript.
-            </li>
-          </ul>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Full-Stack Web Developer with hands-on experience designing and building
+            production websites and web applications. I am the sole developer behind
+            <strong>egcentgroup.com</strong> — a multi-page real-estate platform featuring
+            property listings, short-let bookings, and client enquiry flows.
+          </p>
+          <p>
+            I work across the stack with React, Node.js, Python (Flask/Django), HTML, CSS,
+            JavaScript, SQL and NoSQL. I have practical experience integrating third-party
+            services such as Stripe, IBM Watson Assistant, and IBM Natural Language Understanding.
+          </p>
+          <p>
+            Before focusing fully on software development, I gained valuable operational and
+            client-facing experience in the hospitality industry. This background helps me
+            create practical, user-centered digital solutions. I'm currently expanding my skills
+            in cloud operations and CI/CD practices.
+          </p>
         </div>
-        <hr />
-
-        <div class="achievements-card">
-          <h3>Sentiment Analyzer</h3>
-          <ul>
-            <li>
-              Built and deployed a sentiment analysis feature for product reviews using IBM Natural Language Understanding (NLU).
-            </li>
-          </ul>
-        </div>
-        <hr />
-
-        <div class="achievements-card">
-          <h3>Hospitality Website with Online Booking</h3>
-          <ul>
-            <li>
-              Created a multi-page interactive website for a hospitality business and integrated Stripe as the payment gateway for online bookings.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div style="clear: both"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear: both"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Jimmy delivered a clean, responsive website and communicated clearly throughout the project. He was reliable and open to feedback.
-          <span>&#8221;</span>
-          <br />
-          <small>— Client Project</small>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>
-          <input type="text" placeholder="Name (Optional)" /> <br />
-          <textarea
-            id="new_recommendation"
-            cols="500"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">
-              Submit
-            </button>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <span class="highlight-number">1</span>
+            <span class="highlight-label">Live Production Site</span>
           </div>
-        </fieldset>
+          <div class="highlight-card">
+            <span class="highlight-number">4+</span>
+            <span class="highlight-label">Key Projects Delivered</span>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-number">∞</span>
+            <span class="highlight-label">Curious Learner</span>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="white"
-          width="63px"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      </a>
     </div>
+  </section>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="checkmark--outline.svg" alt="Success" />
-      <h3>Thank you for the recommendation!</h3>
-      <button onclick="showPopup(false)">Ok</button>
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-heading">
+            <img src="assets/icons/html5.svg" alt="" aria-hidden="true" />
+            <h3>Frontend</h3>
+          </div>
+          <ul>
+            <li><img src="assets/icons/html5.svg" alt="" aria-hidden="true" />HTML5</li>
+            <li><img src="assets/icons/css3.svg" alt="" aria-hidden="true" />CSS3</li>
+            <li><img src="assets/icons/javascript.svg" alt="" aria-hidden="true" />JavaScript (Intermediate–Advanced)</li>
+            <li><img src="assets/icons/react.svg" alt="" aria-hidden="true" />React</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-heading">
+            <img src="assets/icons/nodedotjs.svg" alt="" aria-hidden="true" />
+            <h3>Backend</h3>
+          </div>
+          <ul>
+            <li><img src="assets/icons/nodedotjs.svg" alt="" aria-hidden="true" />Node.js</li>
+            <li><img src="assets/icons/express.svg" alt="" aria-hidden="true" />Express</li>
+            <li><img src="assets/icons/python.svg" alt="" aria-hidden="true" />Python (Flask, Django)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-heading">
+            <img src="assets/icons/postgresql.svg" alt="" aria-hidden="true" />
+            <h3>Data & Integrations</h3>
+          </div>
+          <ul>
+            <li><img src="assets/icons/postgresql.svg" alt="" aria-hidden="true" />SQL & NoSQL</li>
+            <li><img src="assets/icons/python.svg" alt="" aria-hidden="true" />IBM Watson Assistant</li>
+            <li><img src="assets/icons/python.svg" alt="" aria-hidden="true" />IBM NLU</li>
+            <li><img src="assets/icons/stripe.svg" alt="" aria-hidden="true" />Stripe Payments</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-heading">
+            <img src="assets/icons/githubactions.svg" alt="" aria-hidden="true" />
+            <h3>Tools & Practices</h3>
+          </div>
+          <ul>
+            <li><img src="assets/icons/git.svg" alt="" aria-hidden="true" />Git & GitHub</li>
+            <li><img src="assets/icons/react.svg" alt="" aria-hidden="true" />Responsive Design</li>
+            <li><img src="assets/icons/githubactions.svg" alt="" aria-hidden="true" />CI/CD (GitHub Actions)</li>
+            <li><img src="assets/icons/github.svg" alt="" aria-hidden="true" />Cloud Operations</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </body>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <article class="project-card featured">
+        <div class="project-header">
+          <img class="project-icon" src="assets/icons/html5.svg" alt="" aria-hidden="true" />
+          <h3>Egcent Group Website</h3>
+          <span class="project-badge">Live Production</span>
+        </div>
+        <p class="project-meta">Sole Developer · <a href="https://egcentgroup.com" target="_blank" rel="noopener">egcentgroup.com</a> · HTML, CSS, JavaScript</p>
+        <p>
+          Designed, developed, and currently maintain the complete public-facing website for
+          Egcent Group, a Lagos-based luxury real-estate company. The site serves as the primary
+          digital storefront for property sales, rentals, short-lets, land, and commercial listings.
+        </p>
+        <ul class="project-points">
+          <li>Multi-section architecture with clear conversion paths</li>
+          <li>Dynamic property cards with pricing, amenities & WhatsApp enquiry integration</li>
+          <li>Fully responsive layout optimized for mobile and desktop</li>
+          <li>Clean information hierarchy that guides visitors from discovery → enquiry</li>
+        </ul>
+      </article>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <img class="project-icon" src="assets/icons/python.svg" alt="" aria-hidden="true" />
+            <h3>AI-Powered Website</h3>
+          </div>
+          <p class="project-meta">Record Label Client · IBM Watson Assistant</p>
+          <p>
+            Designed and developed a secure website integrated with an IBM Watson Assistant
+            chatbot for a record-label client. The chatbot handles visitor queries and improves engagement.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <img class="project-icon" src="assets/icons/mongodb.svg" alt="" aria-hidden="true" />
+            <h3>Sentiment Analyzer</h3>
+          </div>
+          <p class="project-meta">IBM Natural Language Understanding</p>
+          <p>
+            Built and deployed a sentiment-analysis feature for product reviews using IBM NLU.
+            Extracts polarity and key insights to help businesses understand customer feedback at scale.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <img class="project-icon" src="assets/icons/stripe.svg" alt="" aria-hidden="true" />
+            <h3>Hospitality Booking Site</h3>
+          </div>
+          <p class="project-meta">Stripe Payment Gateway</p>
+          <p>
+            Created a multi-page interactive hospitality website with online booking functionality
+            and secure Stripe payment integration. User-centered design informed by prior hospitality experience.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-content">
+      <h2 class="section-title">Let's Build Something Useful</h2>
+      <p class="contact-intro">
+        Open to remote full-stack, front-end, backend, and technical roles.
+        Available during US Eastern Time weekday mornings.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:eyenmummy@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">eyenmummy@gmail.com</span>
+        </a>
+        <a href="tel:+2348060460830" class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+234 806 046 0830</span>
+        </a>
+        <a href="https://github.com/eyenmummy" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/eyenmummy</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jimmy-nya-01553590/" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">jimmy-nya-01553590</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Jimmy Nya · Full-Stack Developer · Lagos, Nigeria</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
